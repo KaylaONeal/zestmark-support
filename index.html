@@ -1,29 +1,46 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zestmark — Private Recipe Saver &amp; Cookbook</title>
+  <link rel="icon" type="image/png" href="./icon-128.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" />
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #241814; background: #fffbf8; }
-    a { color: #c43f14; }
-    header { margin-bottom: 32px; }
-    .card { background: #fff; border: 1px solid #f0dfd6; border-radius: 14px; padding: 20px 24px; margin: 18px 0; }
-    footer { margin-top: 40px; font-size: 14px; color: #755b52; }
+    :root { --bg: oklch(0.975 0.012 58); --surface: #fffdf9; --ink: oklch(0.22 0.036 32); --muted: oklch(0.47 0.034 32); --accent: oklch(0.54 0.165 32); --border: oklch(0.89 0.024 45); }
+    * { box-sizing: border-box; }
+    ::selection { background: oklch(0.54 0.165 32 / 0.18); }
+    body { font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif; max-width: 740px; margin: 48px auto; padding: 0 20px; line-height: 1.65; color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+    header img { width: 56px; height: 56px; border-radius: 14px; flex-shrink: 0; }
+    h1, h2 { font-family: "Newsreader", Georgia, serif; letter-spacing: -0.02em; }
+    h1 { margin: 0 0 6px; font-size: 2rem; font-weight: 700; line-height: 1.12; }
+    .lead { margin: 0; color: var(--muted); }
+    .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px 26px; margin: 20px 0; }
+    .panel h2 { margin-top: 0; font-size: 1.25rem; }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }
   </style>
 </head>
 <body>
   <header>
-    <h1>Zestmark: Recipe Saver</h1>
-    <p>Save recipes from websites, social video captions, and Paprika archives directly on your iPhone, iPad, and Mac — with a single one-time purchase.</p>
+    <img src="./icon-128.png" alt="Zestmark icon" />
+    <div>
+      <h1>Zestmark: Recipe Saver</h1>
+      <p class="lead">Save recipes from websites, social video captions, and Paprika archives privately on iPhone, iPad, and Mac — buy once, cook forever.</p>
+    </div>
   </header>
 
-  <div class="card">
-    <h2>On-Device, Zero Account</h2>
+  <div class="panel">
+    <h2>On-Device Kitchen Cookbook, Zero Account</h2>
     <ul>
-      <li>Extract ingredients and steps locally from recipe URLs or pasted video captions.</li>
-      <li>Hands-free Cook Mode with large typography, inline step timers, and awake screen.</li>
-      <li>Scale servings cleanly (½×, 1×, 2×, 3×) and build grocery lists in one tap.</li>
+      <li>Extract clean ingredients and steps locally from recipe webpage URLs or pasted video captions.</li>
+      <li>Hands-free Cook Mode with warm editorial serif type, inline countdown timers, and awake screen.</li>
+      <li>Scale servings cleanly (½×, 1×, 2×, 3×) and send ingredients straight to your grocery list.</li>
       <li>Free Paprika (<code>.paprikarecipes</code>) import and free Markdown &amp; JSON export anytime.</li>
     </ul>
   </div>
